@@ -9,7 +9,7 @@ async execute(message, args, cmd, client, discord, profileData) {
                  
 fetch(`https://api2.snowflakedev.xyz/api/roast`, {
     headers: {
-        "Authorization": "NDI4NTI5OTI1NzUwOTE1MDcz.MTYxODQ3NDMzMTQwMw==.5d4c88bfceea2ec116a191fa6d458205"
+        "Authorization": process.env.SNOWFLAKEAPI
     }
 })
 .then(res => res.json())

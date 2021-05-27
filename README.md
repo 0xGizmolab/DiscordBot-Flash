@@ -1,6 +1,6 @@
 # DiscordBot-Flash
  A Multipurpose Discord Bot With Anime | Games | Activities | Image | Fun | Utility and Moderation Commands!
-[![Support Server](https://img.shields.io/discord/591914197219016707.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://https://discord.gg/jDP2FbvCdk)
+[![Support Server](https://img.shields.io/discord/834390097621286922.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://https://discord.gg/jDP2FbvCdk)
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">

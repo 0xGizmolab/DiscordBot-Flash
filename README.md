@@ -1,6 +1,8 @@
 # DiscordBot-Flash
 
-[![Support Server](https://img.shields.io/discord/834390097621286922.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://https://discord.gg/jDP2FbvCdk)
+[![Support Server](https://img.shields.io/discord/834390097621286922.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://https://discord.gg/jDP2FbvCdk) 
+[![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)](http://ForTheBadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -9,6 +11,19 @@
   </a>
 
   <h3 align="center">FLASH</h3>
+  <p align="center">
+    An awesome README template to jumpstart your projects!
+    <br />
+    <a href="https://flash.gizmolab.xyz"><strong>Website »</strong></a>
+    <br />
+    <br />
+    <a href="https://discord.com/oauth2/authorize?client_id=782596865803812924&permissions=1614806129&scope=bot">Invite Flash</a>
+    ·
+    <a href="https://github.com/GizmolabAI/DiscordBot-Flash/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/GizmolabAI/DiscordBot-Flash/issues">Request Feature</a>
+  </p>
+</p>
 
 
 

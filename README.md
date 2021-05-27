@@ -51,9 +51,7 @@
 
 ### Built With
 
-* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [MongoDB](https://www.mongodb.com/)
-
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
 
 <!-- GETTING STARTED -->
@@ -104,7 +102,7 @@ You can either Invite Flash From [Here](https://flash.gizmolab.xyz)! or Host You
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/GizmolabAI/DiscordBot-Flash/issues) for a list of proposed features (and known issues).
 
 
 
@@ -134,6 +132,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
  Twitter - [gizmo_gg](https://twitter.com/gizmo_gg)
 
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [DiscordBot-Flash](https://github.com/GizmolabAI/DiscordBot-Flash)
 
 

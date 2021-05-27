@@ -11,7 +11,7 @@
 
   <h3 align="center">FLASH</h3>
   <p align="center">
-   ]A multipurpose Discord Bot to make your server more active and fun!
+   A multipurpose Discord Bot to make your server more active and fun!
     <br />
     <a href="https://flash.gizmolab.xyz"><strong>Website »</strong></a>
     <br />

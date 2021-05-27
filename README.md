@@ -2,6 +2,7 @@
 
 [![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)](http://ForTheBadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -101,13 +102,42 @@ You can either Invite Flash From [Here](https://flash.gizmolab.xyz)! or Host You
     TENORKEY = tenor key
     SNOWFLAKE API = SNOWFLAKE KEY
    ```
-
+6. Enter Your Discord Bot Token and Your desired Prefix in config.json
+```js
+{
+    "token": "bot token",
+    "prefix": "!"
+}
+```
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+> Invite The Bot
 
+Invite The Bot You created at Discord Dev Portal to your Server!
 
+> Start the Bot
+
+Type This In the terminal after navigating to folder where you cloned the repo!
+
+```sh
+node main.js
+```
+
+> Flash Offers A lot of commands to work with:
+
+ANIME: ANIMESEARCH, CHARACTER , ANIME GIFS , ETC
+FUN: MEME , ROAST , SAY , + 5..
+IMAGE: byemom, abandon , cancer , changemymind, + 21.....
+UTILITY: avatar, covid , weather , qr code , +3...
+ACTIVITIES: Youtube Together, Fishing , +2...
+MODERATION: Kick, ban , clear messages , + 5...
+SOUNDBOARD: Ahshit , bruh , sheesh, + 11...
+GAMES: Snake , tictactoe , guessthenumber , akinator, + 4..
+ECONOMY: Balance , beg , work , shop , + 9..
+
+You can also add more commands of your choice If you understand javascript and DiscordJS. Or make Feature Requests [Here](https://github.com/GizmolabAI/DiscordBot-Flash/issues)
 
 
 

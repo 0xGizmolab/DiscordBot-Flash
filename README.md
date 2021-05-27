@@ -128,8 +128,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
-
- Twitter - [gizmo_gg](https://twitter.com/gizmo_gg)
+![Twitter](https://img.shields.io/twitter/follow/gizmo_gg?color=white&label=gizmo_gg&logo=twitter&style=for-the-badge)
+ 
 
 
 Project Link: [DiscordBot-Flash](https://github.com/GizmolabAI/DiscordBot-Flash)

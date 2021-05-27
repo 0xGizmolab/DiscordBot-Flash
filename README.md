@@ -1,5 +1,5 @@
 # DiscordBot-Flash
- A Multipurpose Discord Bot With Anime | Games | Activities | Image | Fun | Utility and Moderation Commands!
+
 [![Support Server](https://img.shields.io/discord/834390097621286922.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://https://discord.gg/jDP2FbvCdk)
 <!-- PROJECT LOGO -->
 <br />
@@ -28,7 +28,6 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -36,7 +35,7 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    
   </ol>
 </details>
 
@@ -45,9 +44,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://flash.gizmolab.xyz)
-
-.
+A Multipurpose Discord Bot With Anime | Games | Activities | Image | Fun | Utility and Moderation Commands!
+All of the Commands and Activities You Need In One Bot! 
 
 ### Built With
 

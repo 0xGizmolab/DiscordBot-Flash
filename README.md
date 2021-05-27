@@ -4,8 +4,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/GizmolabAI/DiscordBot-Flash">
-    <img src="flashlogo.png" alt="Logo" width="80" height="80">
+  <a href="https://flash.gizmolab.xyz">
+    <img src="flashlogo.png" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">FLASH</h3>

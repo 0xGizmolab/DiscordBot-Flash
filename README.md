@@ -127,15 +127,15 @@ node main.js
 
 > Flash Offers A lot of commands to work with:
 
-* ANIME: ANIMESEARCH, CHARACTER , ANIME GIFS , ETC
-* FUN: MEME , ROAST , SAY , + 5..
-* IMAGE: byemom, abandon , cancer , changemymind, + 21.....
-* UTILITY: avatar, covid , weather , qr code , +3...
-* ACTIVITIES: Youtube Together, Fishing , +2...
-* MODERATION: Kick, ban , clear messages , + 5...
-* SOUNDBOARD: Ahshit , bruh , sheesh, + 11...
-* GAMES: Snake , tictactoe , guessthenumber , akinator, + 4..
-* ECONOMY: Balance , beg , work , shop , + 9..
+* ANIME: `ANIMESEARCH, CHARACTER , ANIME GIFS , ETC`
+* FUN: `MEME , ROAST , SAY , + 5..`
+* IMAGE: `byemom, abandon , cancer , changemymind, + 21.....`
+* UTILITY: `avatar, covid , weather , qr code , +3...`
+* ACTIVITIES: `Youtube Together, Fishing , +2...`
+* MODERATION: `Kick, ban , clear messages , + 5...`
+* SOUNDBOARD:`Ahshit , bruh , sheesh, + 11...`
+* GAMES: `Snake , tictactoe , guessthenumber , akinator, + 4..`
+* ECONOMY: `Balance , beg , work , shop , + 9..`
 
 You can also add more commands of your choice If you understand javascript and DiscordJS. Or make Feature Requests [Here](https://github.com/GizmolabAI/DiscordBot-Flash/issues)
 

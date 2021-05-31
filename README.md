@@ -3,7 +3,9 @@
 [![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)](http://ForTheBadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
- [![Discord Bots](https://top.gg/api/widget/status/782596865803812924.svg)](https://top.gg/bot/782596865803812924)
+[![Discord Bots](https://top.gg/api/widget/status/782596865803812924.svg)](https://top.gg/bot/782596865803812924)
+
+<img src="https://cdn.discordapp.com/attachments/197038477953597440/842417344835878916/ClydeWink.gif">
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">

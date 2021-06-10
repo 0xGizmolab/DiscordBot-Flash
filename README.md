@@ -167,8 +167,7 @@ Any contributions you make are **greatly appreciated**.
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Bot In Action
-<iframe src="https://e.widgetbot.io/channels/834390097621286922/839880850668650518" height="600" width="800"></iframe>
+
 
 
 <!-- CONTACT -->

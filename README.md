@@ -168,13 +168,7 @@ Any contributions you make are **greatly appreciated**.
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Bot In Action
-<widgetbot
-  server="834390097621286922"
-  channel="839880850668650518"
-  width="800"
-  height="600"
-></widgetbot>
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+<iframe src="https://e.widgetbot.io/channels/834390097621286922/839880850668650518" height="600" width="800"></iframe>
 
 
 <!-- CONTACT -->

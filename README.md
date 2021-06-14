@@ -172,8 +172,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
-![Twitter](https://img.shields.io/twitter/follow/gizmo_gg?color=white&label=gizmo_gg&logo=twitter&style=for-the-badge)
-[![Support Server](https://img.shields.io/discord/834390097621286922.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://https://discord.gg/jDP2FbvCdk) 
+[![Twitter](https://img.shields.io/twitter/follow/gizmo_gg?color=white&label=gizmo_gg&logo=twitter&style=for-the-badge)](https://twitter.com/gizmo_gg)
+[![Support Server](https://img.shields.io/discord/834390097621286922.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/jDP2FbvCdk) 
 
 
 

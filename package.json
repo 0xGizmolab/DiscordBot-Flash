@@ -24,9 +24,11 @@
     "ascii-table": "0.0.9",
     "axios": "^0.21.1",
     "canvas": "^2.7.0",
+    "discord-buttons": "^2.4.1",
     "discord-reply": "^0.1.2",
     "discord-together": "^1.0.18",
     "discord.js": "^12.5.3",
+    "djs-games": "^1.4.6",
     "dotenv": "^8.2.0",
     "ffmpeg": "0.0.4",
     "ffmpeg-static": "^4.3.0",
@@ -56,7 +58,7 @@
     "topgg-autoposter": "^1.1.10",
     "txtgen": "^2.2.8",
     "weather-js": "^2.0.0",
-    "weky": "^1.4.1",
+    "weky": "^1.6.6",
     "ytpl": "^2.1.1"
   }
 }

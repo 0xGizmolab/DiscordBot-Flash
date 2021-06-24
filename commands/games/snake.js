@@ -1,5 +1,5 @@
-const koenie06games = require('koenie06-games')
-const SnakeGame = new koenie06games.SnakeGame()
+const djsGames = require('djs-games')
+const SnakeGame = new djsGames.SnakeGame()
 module.exports = {
     name: 'snake',
     aliases: ['snakes'],
@@ -9,7 +9,6 @@ module.exports = {
     usage: 'f-snake',
 async execute (message, args, cmd, client, Discord) {
     // if (args[0] === 'snakegame') {
-        SnakeGame.newGame(message)
-//}
+        SnakeGame.startGame(message)
 }
 }

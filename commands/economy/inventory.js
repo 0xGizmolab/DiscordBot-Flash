@@ -2,7 +2,7 @@ const inventory = require('../../models/inventory');
 
 module.exports = {
     name: 'inventory',
-    aliases: [],
+    aliases: ['inv'],
     description: "View your inventory",
     usage: "f-inventory",
     permissions: [],

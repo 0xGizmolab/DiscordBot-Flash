@@ -82,8 +82,10 @@ You can either Invite Flash From [Here](https://flash.gizmolab.xyz)! or Host You
 
 2. Get Your free API Keys at 
 * [Snowflake Api](https://api.snowflakedev.xyz/ )
+* [Memer Api](https://memer-api.js.org/docs?path=welcome/welcome) - For the image commands
 * [Tenor Gif](https://tenor.com/developer/keyregistration)
 * [top.gg](https://top.gg/) - You only need this if you have your bot on that website!
+
 
 3. Clone the repo
    ```sh

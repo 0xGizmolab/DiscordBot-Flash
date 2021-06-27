@@ -4,7 +4,7 @@ const {
   } = require("discord.js");
   
   const Meme = require("memer-api");
-  const memer = new Meme();
+  const memer = new Meme(process.env.MEMERKEY);
   module.exports = {
     name: "disability",
     aliases: [],

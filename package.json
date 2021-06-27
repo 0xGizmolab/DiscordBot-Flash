@@ -41,7 +41,7 @@
     "jimp": "^0.16.1",
     "koenie06-games": "^2.1.0",
     "mal-scraper": "^2.11.3",
-    "memer-api": "^2.1.4",
+    "memer-api": "^3.0.2",
     "moment": "^2.29.1",
     "mongoose": "^5.12.4",
     "ms": "^2.1.3",

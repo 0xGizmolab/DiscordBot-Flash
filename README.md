@@ -8,8 +8,6 @@
 <br />
 <p align="center">
  
-    <img src="flashlogo.png" alt="Logo" width="120" height="120">
-  </a>
 
   <h3 align="center">FLASH</h3>
   <p align="center">

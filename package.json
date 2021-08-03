@@ -28,7 +28,7 @@
     "discord-reply": "^0.1.2",
     "discord-together": "^1.0.18",
     "discord.js": "^12.5.3",
-    "djs-games": "^1.4.6",
+    "djs-games": "^1.5.0",
     "dotenv": "^8.2.0",
     "ffmpeg": "0.0.4",
     "ffmpeg-static": "^4.3.0",

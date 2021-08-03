@@ -1,0 +1,19 @@
+{
+  "name": "djs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord-together": "^1.1.53",
+    "discord.js": "^13.0.0-dev.t1627862659.e2e4f65",
+    "glob": "^7.1.7",
+    "mongoose": "^5.13.2"
+  }
+}

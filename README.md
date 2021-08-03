@@ -9,7 +9,10 @@
 <p align="center">
  
 
-  <h3 align="center">FLASH</h3>
+## IMPORTANT:
+The master branch is in development! Check The V12 Branch for the discord.js v12 code
+
+<h3 align="center">FLASH</h3>
   <p align="center">
    A multipurpose Discord Bot to make your server more active and fun!
     <br />

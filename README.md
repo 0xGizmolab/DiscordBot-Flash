@@ -3,22 +3,19 @@
 [![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)](http://ForTheBadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
-[![Discord Bots](https://top.gg/api/widget/status/782596865803812924.svg)](https://top.gg/bot/782596865803812924)
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://flash.gizmolab.xyz">
-    <img src="flashlogo.png" alt="Logo" width="120" height="120">
-  </a>
+ 
 
   <h3 align="center">FLASH</h3>
   <p align="center">
    A multipurpose Discord Bot to make your server more active and fun!
     <br />
-    <a href="https://flash.gizmolab.xyz"><strong>Website »</strong></a>
+    <a href="https://gizmolab.xyz"><strong>Website »</strong></a>
     <br />
     <br />
-    <a href="https://discord.com/oauth2/authorize?client_id=782596865803812924&permissions=1614806129&scope=bot">Invite Flash</a>
     ·
     <a href="https://github.com/GizmolabAI/DiscordBot-Flash/issues">Report Bug</a>
     ·
@@ -71,7 +68,7 @@ All of the Commands and Activities You Need In One Bot!
 <!-- GETTING STARTED -->
 ## Getting Started
 
-You can either Invite Flash From [Here](https://flash.gizmolab.xyz)! or Host Your Own With the help of the Guide Below!
+Host Your Own With the help of the Guide Below!
 
 
 ### Installation

@@ -14,6 +14,7 @@
     "discord-together": "^1.1.53",
     "discord.js": "^13.0.0-dev.t1627862659.e2e4f65",
     "glob": "^7.1.7",
+    "mal-scraper": "^2.11.3",
     "mongoose": "^5.13.2"
   }
 }

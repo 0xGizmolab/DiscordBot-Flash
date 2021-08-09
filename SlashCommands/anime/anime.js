@@ -1,5 +1,5 @@
 const { Client, CommandInteraction, MessageEmbed} = require("discord.js");
-const axios = require('axios');
+
 module.exports = {
     name: "anime",
     description: "Get Anime Actions",
@@ -113,24 +113,16 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, interaction, args) => {
-        const [type] = args
+        const { Slash } = require('djs-anime')
+        const slash = new Slash({
+        type: args,
+        interaction: interaction,
+        embedFooter: "Made With djs-anime", //The Footer of the embed
+        embedTitle: `Here's a ${args} GIF`, //The title of the embed
+        embedColor: "RANDOM", //The color of the embed! (Use Hex codes or use the color name)
+        })
+        slash.anime()
         
-        
-        const url = `https://api.waifu.pics/sfw/${type}`;
 
-        let response, data;
-        try {
-            response = await axios.get(url);
-            data = response.data;
-        } catch (e) {
-            return interaction.followUp(`An error occured!`)
-        }
-        const embed = new MessageEmbed()
-        .setTitle(`Here's a ${type} GIF`)
-        .setColor("RANDOM")
-        .setImage(data.url)
-        .setFooter(`Powered by waifu.pics`)
-
-        return interaction.followUp({ embeds: [embed] });
     },
 };

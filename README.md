@@ -67,6 +67,9 @@ All of the Commands and Activities You Need In One Bot!
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
+### LIVE DEMO: 
+
+- **LIVE DEMO** :- [Click Here To See Live Demo](https://discordbot-flash.gizmodev.repl.co/)
 
 <!-- GETTING STARTED -->
 ## Getting Started

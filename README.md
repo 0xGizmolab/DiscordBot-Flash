@@ -149,6 +149,9 @@ You can also add more commands of your choice If you understand javascript and D
 
 See the [open issues](https://github.com/GizmolabAI/DiscordBot-Flash/issues) for a list of proposed features (and known issues).
 
+<!-- SUPPORT -->
+## BUY ME A COFFEE
+<a href="https://www.buymeacoffee.com/gizmolab" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 120x !important;" ></a>
 
 
 <!-- CONTRIBUTING -->

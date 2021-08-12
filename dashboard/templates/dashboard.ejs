@@ -9,6 +9,8 @@
 
                 </div>
                 <% user.guilds.forEach(guild=> {
+                    const permsOnGuild = new perms(BigInt(guild.permissions));
+                    if(!permsOnGuild.has("MANAGE_GUILD")) return;
                    
                     %>
                     <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">

@@ -1,18 +1,14 @@
-
-const dotenv = require('dotenv');
-dotenv.config();
 module.exports = {
     "token": "",
     "prefix": "-",
+    "MEMER_API_TOKEN": "", // Get The Memer API Token from https://discord.com/invite/emD44ZJaSA
     "mongooseConnectionString": "",
-    "MEMER_API_TOKEN": "", // Get The Memer API Token from https://discord.com/invite/emD44ZJaSA,
     "id": "",  // https://discordapp.com/developers/applications/ID/information,
     "clientSecret": "",  // https://discordapp.com/developers/applications/ID/information,
-    "domain": "",
+    "domain": "http://localhost:3000",
     "port": 3000,
     "usingCustomDomain": false
 }
-
 
 /**
  * !!!

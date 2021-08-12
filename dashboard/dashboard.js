@@ -8,7 +8,7 @@ const Strategy = require("passport-discord").Strategy;
 const config = require("../config");
 const ejs = require("ejs");
 const bodyParser = require("body-parser");
-const { Discord, Permissions } = require("discord.js");
+const Discord = require("discord.js");
 const GuildSettings = require("../models/settings");
 // We instantiate express app and the session store.
 const app = express();
@@ -171,11 +171,11 @@ module.exports = async (client) => {
 
   // Dashboard endpoint.
   app.get("/dashboard", checkAuth, (req, res) => {
-    renderTemplate(res, req, "dashboard.ejs", { perms: Permissions });
+    renderTemplate(res, req, "dashboard.ejs", { perms: Discord.Permissions });
   });
 
   // Settings endpoint.
-  app.get("/dashboard/:guildID", checkAuth, async (req, res) => {
+  app.get("/dashboard/:guildId", checkAuth, async (req, res) => {
     // We validate the request, check if guild exists, member is in guild and if member has minimum permissions, if not, we redirect it back.
     const guild = client.guilds.cache.get(req.params.guildId);
     if (!guild) return res.redirect("/dashboard");
@@ -187,7 +187,7 @@ module.exports = async (client) => {
       } catch (err) { console.error(`Couldn't fetch the members of ${guild.id}: ${err}`); }
     }
     if (!member) return res.redirect("/dashboard");
-    if (!member.permissions.has([Permissions.FLAGS.MANAGE_GUILD])) return res.redirect("/dashboard");
+    if (!member.permissions.has("MANAGE_GUILD")) return res.redirect("/dashboard");
 
     // We retrive the settings stored for this guild.
     var storedSettings = await GuildSettings.findOne({ gid: guild.id });
@@ -203,7 +203,7 @@ module.exports = async (client) => {
     renderTemplate(res, req, "settings.ejs", { guild, settings: storedSettings, alert: null });
   });
 
-  app.get("/dashboard/general/:guildID", checkAuth, async (req, res) => {
+  app.get("/dashboard/general/:guildId", checkAuth, async (req, res) => {
     // We validate the request, check if guild exists, member is in guild and if member has minimum permissions, if not, we redirect it back.
     const guild = client.guilds.cache.get(req.params.guildId);
     if (!guild) return res.redirect("/dashboard");
@@ -215,19 +215,19 @@ module.exports = async (client) => {
       } catch (err) { console.error(`Couldn't fetch the members of ${guild.id}: ${err}`); }
     }
     if (!member) return res.redirect("/dashboard");
-    if (!member.permissions.has([Permissions.FLAGS.MANAGE_GUILD])) return res.redirect("/dashboard");
+    if (!member.permissions.has("MANAGE_GUILD")) return res.redirect("/dashboard");
     renderTemplate(res, req, "generalsettings.ejs", { guild });
   });
 
 
   // Settings endpoint.
-  app.post("/dashboard/general/:guildID", checkAuth, async (req, res) => {
+  app.post("/dashboard/general/:guildId", checkAuth, async (req, res) => {
     // We validate the request, check if guild exists, member is in guild and if member has minimum permissions, if not, we redirect it back.
     const guild = client.guilds.cache.get(req.params.guildId);
     if (!guild) return res.redirect("/dashboard");
     const member = guild.members.cache.get(req.user.id);
     if (!member) return res.redirect("/dashboard");
-    if (!member.permissions.has([Permissions.FLAGS.MANAGE_GUILD])) return res.redirect("/dashboard");
+    if (!member.permissions.has("MANAGE_GUILD")) return res.redirect("/dashboard");
     // We retrive the settings stored for this guild.
     var storedSettings = await GuildSettings.findOne({ gid: guild.id });
     if (!storedSettings) {

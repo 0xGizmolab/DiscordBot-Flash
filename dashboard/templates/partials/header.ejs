@@ -34,10 +34,15 @@
 
 
 		<div class="w-full container mx-auto flex flex-wrap items-center mt-0 pt-3 pb-3 md:pb-0">
-
+			
 			<div class="w-1/2 pl-2 md:pl-0">
+				<a href="/"></a>
+				<%- `<img class="w-8 h-8 inline-block rounded-full mr-4"
+			src="https://cdn.discordapp.com/avatars/${bot.user.id}/${bot.user.avatar}"
+			class="card-img-top" style="max-width: 18rem;">` %>
+			</a>
 				<a class="text-gray-100 text-base xl:text-xl no-underline hover:no-underline font-bold" href="/">
-					DashBoard
+					<%= bot.user.username %>
 				</a>
 			</div>
 			<div class="w-1/2 pr-0">

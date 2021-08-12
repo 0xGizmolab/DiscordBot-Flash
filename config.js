@@ -8,7 +8,7 @@ module.exports = {
     "MEMER_API_TOKEN": "", // Get The Memer API Token from https://discord.com/invite/emD44ZJaSA,
     "id": "",  // https://discordapp.com/developers/applications/ID/information,
     "clientSecret": "",  // https://discordapp.com/developers/applications/ID/information,
-    "domain": "http://localhost/",
+    "domain": "",
     "port": 3000,
     "usingCustomDomain": false
 }

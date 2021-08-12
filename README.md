@@ -11,14 +11,9 @@
 
 ## IMPORTANT:
 
-## THIS GUIDE IS NOT UP-T0 DATE FOR V13 AND DASHBOARD! 
+## THIS GUIDE IS NOT UP-TO DATE FOR V13 AND DASHBOARD! 
 ## New Guide Soon!
-
-
-
-
-
-The master branch is in development! Check The V12 Branch for the discord.js v12 code
+## The master branch is in development! Check The V12 Branch for the discord.js v12 code
 
 <h3 align="center">FLASH</h3>
   <p align="center">

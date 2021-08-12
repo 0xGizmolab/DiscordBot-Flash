@@ -1,0 +1,26 @@
+/* 
+  Style.css file is linked in the header template, therefore
+  it is applied to every page of our application.
+  Write some style to begin.
+*/
+a:hover {
+  color: yellow;
+}
+
+.k:hover {
+  background-color: white!important;
+  color: black!important;
+}
+b:hover {
+  color: black;
+}
+
+.navbar1 {
+  height: 710px;
+}
+
+@media screen and (max-width: 600px) {
+.navbar1 {
+  height: 1220px;
+}
+}

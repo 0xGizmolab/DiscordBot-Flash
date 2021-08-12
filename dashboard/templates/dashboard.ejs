@@ -1,0 +1,67 @@
+<%- include("partials/header", { bot, user, path, title: "Manage Servers" , active:"dash" }) %>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">
+        <div class="flex items-center bg-indigo-100 w-screen min-h-screen" style="font-family: 'Muli', sans-serif;">
+            <div class="container ml-auto mr-auto flex flex-wrap items-start">
+                <div class="w-full pl-5 lg:pl-2 mb-4 mt-4">
+
+                </div>
+                <% user.guilds.forEach(guild=> {
+                   
+                    %>
+                    <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                        <div
+                            class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                            <figure class="mb-2">
+
+                                <%- guild.icon ? `<img src="https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}"
+                                    class="card-img-top" style="max-width: 18rem;" class="h-64 ml-auto mr-auto">` :
+                                    `<img src="https://ui-avatars.com/api/?name=${guild.name}&background=#FFFFFF"
+                                        class="card-img-top" style="max-width: 18rem;" class="h-64 ml-auto mr-auto" />`
+                                    %>
+                            </figure>
+                            <div class="rounded-lg p-4 bg-black flex flex-col">
+                                <div>
+                                    <h5 style="font-size:18px;" class="text-white text-2xl font-bold leading-none">
+                                        <%= guild.name %>
+                                    </h5>
+                                    <span class="text-xs text-gray-400 leading-none"></span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="text-lg text-white font-light">
+
+                                    </div>
+
+
+
+                                    <% if (bot.guilds.cache.get(guild.id)) { %>
+                                        <a href="/dashboard/<%- guild.id %>" <button
+                                            style="background: yellow; margin-top: 10px;margin-left: 60%;"
+                                            class="k font-bold py-2 px-4 rounded-full">
+
+                                            <span class="b"> EDIT</span>
+                                            </button></a>
+                                        <% } else { %>
+                                            <a href="<%= `https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&scope=bot&guild_id=${guild.id}&response_type=code&redirect_uri=${encodeURIComponent(`${bot.config.domain}/callback`)}`  %>"
+                                                <button style="background: yellow; margin-top: 10px;margin-left: 60%;"
+                                                class="k font-bold py-2 px-4 rounded-full">
+                                                <span class="b">INVITE</span>
+                                                </button>
+                                            </a>
+                                            <% } %>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <% }); %>
+            </div>
+        </div>
+
+
+        <%- include("partials/footer") %>

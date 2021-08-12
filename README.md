@@ -151,7 +151,7 @@ See the [open issues](https://github.com/GizmolabAI/DiscordBot-Flash/issues) for
 
 <!-- SUPPORT -->
 ## BUY ME A COFFEE
-<a href="https://www.buymeacoffee.com/gizmolab" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 120x !important;" ></a>
+[![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
 
 <!-- CONTRIBUTING -->
@@ -166,6 +166,8 @@ Any contributions you make are **greatly appreciated**.
 5. Open a Pull Request
 
 
+## CREDITS 
+DASHBOARD: [Yash094](https://github.com/Yash094)
 
 <!-- LICENSE -->
 ## License
@@ -181,6 +183,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [![Support Server](https://img.shields.io/discord/834390097621286922.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/jDP2FbvCdk) 
 
 
-
+[buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg
+[buymeacoffee]: https://www.buymeacoffee.com/gizmolab
 
 

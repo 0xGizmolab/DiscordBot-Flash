@@ -46,7 +46,7 @@
                                             <span class="b"> EDIT</span>
                                             </button></a>
                                         <% } else { %>
-                                            <a href="<%= `https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&scope=bot&guild_id=${guild.id}&response_type=code&redirect_uri=${encodeURIComponent(`${bot.config.domain}/callback`)}`  %>"
+                                            <a href="<%= `https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&guild_id=${guild.id}&permissions=55801015543&response_type=code&redirect_uri=${encodeURIComponent(`${bot.config.domain}/callback`)}&scope=bot%20applications.commands`  %>"
                                                 <button style="background: #D72323; margin-top: 10px;margin-left: 60%;"
                                                 class="k font-bold py-2 px-4 rounded-full">
                                                 <span class="b">INVITE</span>

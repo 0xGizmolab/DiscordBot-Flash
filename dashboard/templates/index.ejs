@@ -14,7 +14,7 @@
               </h1>
               <div class="mt-4 text-lg text-gray-300">
                 <p style="margin-bottom: 10px;">We invite you to try our bot and hope you enjoy!</p>
-                <a href="https://discord.com/oauth2/authorize?client_id=833293885077192724&scope=bot&response_type=code&redirect_uri=https%3A%2F%2Fdiscordbot-flash.gizmodev.repl.co%2Fcallback"> <button href="/"
+                <a href="<%= `https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&permissions=55801015543&response_type=code&redirect_uri=${encodeURIComponent(`${bot.config.domain}/callback`)}&scope=bot%20applications.commands`  %>"> <button href="/"
                     class="h-10 px-5 m-2 text-black transition-colors duration-150 bg-white rounded-lg focus:shadow-outline hover:bg-indigo-800">Invite</button></a>
                 <a href="/dashboard"> <button style="background: #D72323;"
                     class="h-10 px-5 m-2 text-black transition-colors duration-150  rounded-lg focus:shadow-outline">Dashboard</button></a>

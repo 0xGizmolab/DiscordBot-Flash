@@ -7,21 +7,19 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
- 
-
-## IMPORTANT:
-
-## THIS GUIDE IS NOT UP-TO DATE FOR V13 AND DASHBOARD! 
-## New Guide Soon!
-## The master branch is in development! Check The V12 Branch for the discord.js v12 code
+<p align="center">
+  <a href="https://github.com/GizmolabAI/DiscordBot-Flash">
+    <img src="flashlogo.png" alt="Logo" width="80" height="80">
+  </a>
 
 <h3 align="center">FLASH</h3>
   <p align="center">
-   A multipurpose Discord Bot to make your server more active and fun!
+   A multipurpose Discord with a Web Dashboard
     <br />
-    <a href="https://gizmolab.xyz"><strong>Website »</strong></a>
+    <a href="https://docs.gizmolab.xyz"><strong>Explore The Docs »</strong></a>
     <br />
     <br />
+     <a href="https://github.com/GizmolabAI/DiscordBot-Flash/issues">View Demo</a>
     ·
     <a href="https://github.com/GizmolabAI/DiscordBot-Flash/issues">Report Bug</a>
     ·
@@ -63,61 +61,56 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-A Multipurpose Discord Bot With Anime | Games | Activities | Image | Fun | Utility and Moderation Commands!
-All of the Commands and Activities You Need In One Bot! 
+A Multipurpose Discord Bot with a Web Dashboard! With commands for Anime | Moderation | Games | Activities | Image Manipulation | Utilities and more!
 
 ### Built With
-
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
-
-### LIVE DEMO: 
-
-- **LIVE DEMO** :- [Click Here To See Live Demo](https://discordbot-flash.gizmodev.repl.co/)
+[![forthebadge](extras/made-with-node.js.svg)](https://nodejs.org/en/)
+[![forthebadge](extras/uses-mongo-db.svg)](https://www.mongodb.com/cloud/atlas/)
+[![forthebadge](extras/uses-tailwind-css.svg)](https://tailwindcss.com/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Host Your Own With the help of the Guide Below!
+- You Invite Flash to your Server by Clicking Here!
+- You can also Follow The Guide To launch your own instance of Flash!
 
 
 ### Installation
 
-1. Create A Discord Bot Application on [Discord Developer Portal](https://discord.com/developers/applications) and Get Your Bot Token!
+**1.** Create A Discord Bot Application on [Discord Developer Portal](https://discord.com/developers/applications) and Get Your Bot Token!
 
-2. Create A [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2-in?utm_source=google&utm_campaign=gs_apac_india_search_core_brand_atlas_desktop&utm_term=mongodb%20web%20service&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624347&gclid=CjwKCAjw47eFBhA9EiwAy8kzNIxUxDVBfCKUmjLMNJ9JiWgkFauXv9LtC0cFG-qrmM-Vg5Y4RUG7IBoCHyUQAvD_BwE) Database and get its Connection Link. Checkout This Tutorial To know how to use MongoDB [Tutorial](https://youtu.be/8no3SktqagY)
+**2.** Create A [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2-in?utm_source=google&utm_campaign=gs_apac_india_search_core_brand_atlas_desktop&utm_term=mongodb%20web%20service&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624347&gclid=CjwKCAjw47eFBhA9EiwAy8kzNIxUxDVBfCKUmjLMNJ9JiWgkFauXv9LtC0cFG-qrmM-Vg5Y4RUG7IBoCHyUQAvD_BwE) Database and get its Connection Link. Checkout This Tutorial To know how to use MongoDB [Tutorial](https://youtu.be/8no3SktqagY)
 
-2. Get Your free API Keys at 
-* [Snowflake Api](https://api.snowflakedev.xyz/ )
+**3.** Get Your free API Keys at 
 * [Memer Api](https://memer-api.js.org/docs?path=welcome/welcome) - For the image commands
 * [Tenor Gif](https://tenor.com/developer/keyregistration)
 * [top.gg](https://top.gg/) - You only need this if you have your bot on that website!
 
 
-3. Clone the repo
+**4.** Clone the repo
    ```sh
    git clone https://github.com/GizmolabAI/DiscordBot-Flash.git
    ```
-4. Install NPM packages
+**5.** Install NPM packages
    ```sh
    npm install
    ```
-5. Enter your Discord Bot Token, API Key and Mongo Data base url in .env 
+**6.** Enter your Discord Bot Token, API Key and Mongo Data base url in the config.js file.
    ```js
-    DISCORD_TOKEN = BOT TOKEN
-    PREFIX = BOT PREFIX
-    MONGODB_SRV = MONGO LINK
-    OWNER = YOUR DISCORD ID
-    TOPGG = TOP.GG token
-    TENORKEY = tenor key
-    SNOWFLAKE API = SNOWFLAKE KEY
+    "token": "YOUR BOT TOKEN",
+    "prefix": "The Default Prefix for the Bot",
+    "MEMER_API_TOKEN": "Memer API Token", // Get The Memer API Token from https://discord.com/invite/emD44ZJaSA
+    "TENOR_API_KEY": "Tenor API Token", // Get The Tenor API Key from https://www.tenor.co/api/v1/key/
+    "mongooseConnectionString": "mongodb connection url", 
+    "id": "clientid",  // https://discordapp.com/developers/applications/ID/information,
+    "clientSecret": "client secret",  // https://discordapp.com/developers/applications/ID/information,
+    "domain": "http://localhost:3000", // Enter your domain here when you are running the bot on a different domain than localhost
+    "port": 3000,
+    "usingCustomDomain": false // Make this true if you want to use your own domain
    ```
-6. Enter Your Discord Bot Token and Your desired Prefix in config.json
-```js
-{
-    "token": "bot token",
-    "prefix": "!"
-}
-```
+**7.** Add callback URI in discord portal. eg - https://yourdomainname.com/callback <br>
+If you are using local host add http://localhost:3000/callback as the redirect URI.
+<img src="https://cdn.discordapp.com/attachments/834390098304565323/876093164585369631/unknown.png">
 
 
 <!-- USAGE EXAMPLES -->
@@ -131,7 +124,7 @@ Invite The Bot You created at Discord Dev Portal to your Server!
 Type This In the terminal after navigating to folder where you cloned the repo!
 
 ```sh
-node main.js
+npm start
 ```
 
 > Flash Offers A lot of commands to work with:
@@ -152,6 +145,18 @@ You can also add more commands of your choice If you understand javascript and D
 
 <!-- ROADMAP -->
 ## Roadmap
+
+- Dashboard ✔
+- Ported Old Commands ✔
+- Event Logging 🟢
+- Economy System ❌
+- XP System ❌
+
+| Symbol | Legend |
+| :---: | :---: |
+| ✔ | Done |
+| 🟢 | In Progress |
+| ❌ | Not Started |
 
 See the [open issues](https://github.com/GizmolabAI/DiscordBot-Flash/issues) for a list of proposed features (and known issues).
 

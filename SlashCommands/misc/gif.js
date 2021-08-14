@@ -1,5 +1,5 @@
 const { Client, CommandInteraction } = require("discord.js");
-
+const config = require("../../config");
 module.exports = {
     name: "gif",
     description: "search for a gif on Tenor",
@@ -24,7 +24,7 @@ module.exports = {
 
 
         const [gifs] = args.join(' ')
-        let url = `https://g.tenor.com/v1/search?q=${gifs}&key=${process.env.TENORKEY}&ContentFilter=medium`;
+        let url = `https://g.tenor.com/v1/search?q=${gifs}&key=${config.TENOR_API_KEY}&ContentFilter=medium`;
         let response = await fetch(url);
         let json = await response.json();
     

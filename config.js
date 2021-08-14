@@ -1,8 +1,9 @@
 module.exports = {
     "token": "",
-    "prefix": "-",
+    "prefix": "",
     "MEMER_API_TOKEN": "", // Get The Memer API Token from https://discord.com/invite/emD44ZJaSA
-    "mongooseConnectionString": "",
+    "TENOR_API_KEY": "", // Get The Tenor API Key from https://www.tenor.co/api/v1/key/
+    "mongooseConnectionString": "", 
     "id": "",  // https://discordapp.com/developers/applications/ID/information,
     "clientSecret": "",  // https://discordapp.com/developers/applications/ID/information,
     "domain": "http://localhost:3000",

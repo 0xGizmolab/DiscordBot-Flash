@@ -7,7 +7,8 @@ module.exports = {
         { 
             name: 'user',
             description: 'The user you want the avatar for',
-            type: 'USER'
+            type: 'USER',
+            required: true
         },
 
     ],
@@ -22,13 +23,13 @@ module.exports = {
         const [av] = args
         console.log(av)
 
-        let member = av || interaction.user
-
-        let avatar = interaction.user.displayAvatarURL({size: 1024, dynamic: true })
+        let userToGet = interaction.guild.members.cache.get(av)
+        console.log(userToGet)
+        let avatar = av.displayAvatarURL({size: 1024, dynamic: true })
 
 
         const embed = new MessageEmbed()
-        .setTitle(`${interaction.member.displayName}'s avatar`)
+        .setTitle(`${userToGet.displayName}'s avatar`)
         .setImage(avatar)
         .setColor("DC143C")
 

@@ -21,16 +21,12 @@ module.exports = {
       .setThumbnail(icon)
       .addFields(
         {
-          name: 'Region',
-          value: region,
-        },
-        {
           name: 'Members',
           value: memberCount,
         },
         {
           name: 'Owner',
-          value: owner.user.tag,
+          value: OwnerId,
         },
         {
           name: 'AFK Timeout',

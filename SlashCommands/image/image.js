@@ -1,6 +1,7 @@
 const { Client, CommandInteraction, MessageEmbed, MessageAttachment } = require("discord.js");
 const Meme = require("memer-api");
-const memer = new Meme('aooyCOTjJFh');
+const config = require("../../config")
+const memer = new Meme(config.MEMER_API_TOKEN);
 module.exports = {
     name: "image",
     description: "Image manipulation commands",

@@ -178,7 +178,7 @@ Any contributions you make are **greatly appreciated**.
 
 
 ## CREDITS 
-DASHBOARD: [Yash094](https://github.com/Yash094)
+DASHBOARD BASE : [Yash094](https://github.com/Yash094)
 
 <!-- LICENSE -->
 ## License

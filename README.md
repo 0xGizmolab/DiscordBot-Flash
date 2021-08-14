@@ -71,7 +71,7 @@ A Multipurpose Discord Bot with a Web Dashboard! With commands for Anime | Moder
 <!-- GETTING STARTED -->
 ## Getting Started
 
-- You Invite Flash to your Server by Clicking Here!
+- You Invite Flash to your Server by Clicking [Here](https://discord.com/api/oauth2/authorize?client_id=876092358175899698&permissions=55800753399&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&scope=bot%20applications.commands)
 - You can also Follow The Guide To launch your own instance of Flash!
 
 

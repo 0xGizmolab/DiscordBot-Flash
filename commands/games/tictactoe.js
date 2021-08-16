@@ -2,6 +2,7 @@ const { Message, Client } = require("discord.js");
 
 module.exports = {
     name: "tictactoe",
+    aliases: ['ttt'],
     /**
      *
      * @param {Client} client

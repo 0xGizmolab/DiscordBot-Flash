@@ -13,6 +13,7 @@
   "dependencies": {
     "autoprefixer": "^10.2.6",
     "body-parser": "^1.19.0",
+    "chalk": "^4.1.2",
     "discord-together": "^1.1.62",
     "discord.js": "^13.1.0",
     "djs-anime": "^2.0.9",

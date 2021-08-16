@@ -2,6 +2,7 @@ const { Message, Client, MessageEmbed } = require("discord.js");
 
 module.exports = {
     name: "akinator",
+    aliases: ['aki'],
     /**
      *
      * @param {Client} client

@@ -6,7 +6,7 @@ const client = new Client({
     intents: 32767,
 });
 module.exports = client;
-Dashboard(client);
+
 // Global Variables
 
 client.commands = new Collection();
@@ -23,3 +23,4 @@ client.discordTogether = new DiscordTogether(client, {
 // Initializing the project
 require("./handler")(client);
 client.login(client.config.token);
+Dashboard(client);

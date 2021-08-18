@@ -24,7 +24,7 @@
               <li class="mb-6">
                 <a href="/dashboard/general/<%- guild.id %>">
                   <span>
-                    <i style="margin-left: 27%;" class="fas fa-angle-right fa-fw mr-3 text-yellow-400"></i>
+                    <i style="margin-left: 27%;" class="fas fa-angle-right fa-fw mr-3 text-red-700"></i>
                     </svg>
                   </span>
                 </a>
@@ -48,12 +48,12 @@
         </a>
       </div>
     </nav>
-    <div class="px-16 py-4 text-gray-700 bg-white h-screen w-screen">
+    <div class="px-16 py-4 text-gray-100 bg-gray-900 h-screen w-screen">
       <h1 style="font-size: 30px;
     margin-bottom: 5%;">General Settings</h1>
       <form method="POST">
         <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+          <label class="block text-gray-100 text-sm font-bold mb-2" for="name">
             Prefix
           </label>
           <input
@@ -61,7 +61,7 @@
             id="prefix" type="text" name="prefix" value="<%= settings.prefix %>" placeholder="<%= settings.prefix %>">
         </div>
         <div class="mb-4">
-          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+          <label class="block uppercase tracking-wide text-gray-100 text-xs font-bold mb-2" for="grid-state">
             Log Channel
           </label>
           <div class="relative">
@@ -69,7 +69,7 @@
               class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
 
               <% guild.channels.cache.forEach(c=> {
-                if(c.type === 'text'){
+                if(c.type === 'GUILD_TEXT'){
 
                 %>
                 <option value=<%=c.id %>><%= c.name %>

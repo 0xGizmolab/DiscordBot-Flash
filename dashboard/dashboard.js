@@ -163,7 +163,11 @@ module.exports = async (client) => {
       res.redirect("/");
     });
   });
+  //arc cdn
+app.get("/arc-sw.js", (req, res) =>{
+  res.sendFile(`${process.cwd()}/arc-sw.js`);
 
+})
   // Index endpoint.
   app.get("/", (req, res) => {
     renderTemplate(res, req, "index.ejs");
@@ -173,6 +177,11 @@ module.exports = async (client) => {
   app.get("/dashboard", checkAuth, (req, res) => {
     renderTemplate(res, req, "dashboard.ejs", { perms: Discord.Permissions });
   });
+
+  app.get("/features", (req, res) => {
+    renderTemplate(res, req, "features.ejs");
+  });
+  
 
   // Settings endpoint.
   app.get("/dashboard/:guildId", checkAuth, async (req, res) => {

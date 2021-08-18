@@ -1,0 +1,888 @@
+<%- include("partials/header", { bot, user, path, title: "Features" , active:"features"}) %>
+<link rel="stylesheet" href="../assets/style.css">
+<a id="button"></a>
+<style>
+	.table {
+		border-spacing: 0 15px;
+	}
+
+	i {
+		font-size: 1rem !important;
+	}
+
+	.table tr {
+		border-radius: 20px;
+	}
+
+	tr td:nth-child(n+5),
+	tr th:nth-child(n+5) {
+		border-radius: 0 .625rem .625rem 0;
+	}
+
+	tr td:nth-child(1),
+	tr th:nth-child(1) {
+		border-radius: .625rem 0 0 .625rem;
+	}
+</style>
+
+<script>
+	var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+</script>
+<main>
+	
+	<div class="relative flex content-center items-center justify-center" style="min-height: 75vh;">
+
+		<div class="absolute top-0 w-full h-full bg-center bg-cover" style='background: #121212;'>
+
+			<span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-gray-900"></span>
+		</div>
+		
+		<div class="container relative mx-auto">
+			<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+			<div class="w-full text-white ">
+				<div x-data="{ open: false }"
+					class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+					<div class="p-4 flex flex-row items-center justify-between">
+						<a href="#"
+							class="text-lg font-semibold tracking-widest text-white uppercase rounded-lg hover:text-red-700 focus:outline-none "><%= bot.user.username %>
+							Features</a>
+						<button class="md:hidden rounded-lg " @click="open = !open">
+							<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+								<path x-show="!open" fill-rule="evenodd"
+									d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+									clip-rule="evenodd"></path>
+								<path x-show="open" fill-rule="evenodd"
+									d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+									clip-rule="evenodd"></path>
+							</svg>
+						</button>
+					</div>
+					<nav :class="{'flex': open, 'hidden': !open}"
+						class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+						<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent text-white rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-white focus:text-white hover:bg-gray-200 focus:bg-gray-200"
+							href="#anime">Anime</a>
+						<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-gray-200 focus:bg-gray-200"
+							href="#economy">Economy</a>
+						<a class="px-4 py-2  mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-gray-200 focus:bg-gray-200"
+							href="#moderation">Moderation</a>
+						<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-gray-200 focus:bg-gray-200"
+							href="#fun">Fun</a>
+						<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-gray-200 focus:bg-gray-200"
+							href="#images">Images</a>
+						<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-gray-200 focus:bg-white"
+							href="#utility">Utility</a>
+						<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-gray-200 focus:bg-white"
+							href="#games">Games</a>
+
+					</nav>
+				</div>
+			</div>
+			<div class="items-center flex flex-wrap">
+
+			</div>
+			<!--Anime Commands-->
+			<link
+				href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+				rel="stylesheet">
+			<div class="flex items-center justify-center pt-8 ">
+				<div class="col-span-12">
+					<h2 id="anime" class="font-semibold text-white  border-b-2">Anime Commands</h2>
+					<div class="overflow-auto lg:overflow-visible ">
+						<table class="table text-gray-400 border-separate space-y-6 text-sm">
+							<thead class="bg-gray-800 text-gray-500">
+								<tr>
+									<th class="p-3">Command</th>
+									<th class="p-3 text-left">Category</th>
+									<th class="p-3 text-left">Usage</th>
+									<th class="p-3 text-left">Status</th>
+									<th class="p-3">
+
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="bg-gray-800">
+									<td class="p-3">
+										<div class="ml-3">
+											<div class="">Anime Gifs</div>
+											<div class="text-gray-500">Get Anime GIFs</div>
+										</div>
+					</div>
+					</td>
+					<td class="p-3">
+						Anime
+					</td>
+					<td class="p-3 font-bold">
+						/anime
+					</td>
+					<td class="p-3">
+						<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+					</td>
+					<td class="p-3">
+
+					</td>
+					</tr>
+					<tr class="bg-gray-800">
+						<td class="p-3">
+							<div class="ml-3">
+								<div class="">Anime Quotes</div>
+								<div class="text-gray-500">Get Anime Quotes</div>
+							</div>
+				</div>
+				</td>
+				<td class="p-3">
+					Anime
+				</td>
+				<td class="p-3 font-bold">
+					/quote
+				</td>
+				<td class="p-3">
+					<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+				</td>
+				<td class="p-3">
+
+				</td>
+				</tr>
+				<tr class="bg-gray-800">
+					<td class="p-3">
+						<div class="ml-3">
+							<div class="">Anime Search</div>
+							<div class="text-gray-500">Search information about an Anime</div>
+						</div>
+			</div>
+			</td>
+			<td class="p-3">
+				Anime
+			</td>
+			<td class="p-3 font-bold">
+				/animesearch
+			</td>
+			<td class="p-3">
+				<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+			</td>
+			<td class="p-3">
+
+			</td>
+			</td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+	</div>
+
+	<!--Economy Commands-->
+	<link
+				href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+				rel="stylesheet">
+			<div class="flex items-center justify-center pt-8 ">
+				<div class="col-span-12">
+					<h2 id="economy" class="font-semibold text-white  border-b-2">Economy Commands</h2>
+					<div class="overflow-auto lg:overflow-visible ">
+						<table class="table text-gray-400 border-separate space-y-6 text-sm">
+							<thead class="bg-gray-800 text-gray-500">
+								<tr>
+									<th class="p-3">Command</th>
+									<th class="p-3 text-left">Category</th>
+									<th class="p-3 text-left">Usage</th>
+									<th class="p-3 text-left">Status</th>
+									<th class="p-3">
+
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="bg-gray-800">
+									<td class="p-3">
+										<div class="ml-3">
+											<div class="">Anime Gifs</div>
+											<div class="text-gray-500">Get Anime GIFs</div>
+										</div>
+					</div>
+					</td>
+					<td class="p-3">
+						Anime
+					</td>
+					<td class="p-3 font-bold">
+						/anime
+					</td>
+					<td class="p-3">
+						<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+					</td>
+					<td class="p-3">
+
+					</td>
+					</tr>
+					<tr class="bg-gray-800">
+						<td class="p-3">
+							<div class="ml-3">
+								<div class="">Anime Quotes</div>
+								<div class="text-gray-500">Get Anime Quotes</div>
+							</div>
+				</div>
+				</td>
+				<td class="p-3">
+					Anime
+				</td>
+				<td class="p-3 font-bold">
+					/quote
+				</td>
+				<td class="p-3">
+					<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+				</td>
+				<td class="p-3">
+
+				</td>
+				</tr>
+				<tr class="bg-gray-800">
+					<td class="p-3">
+						<div class="ml-3">
+							<div class="">Anime Search</div>
+							<div class="text-gray-500">Search information about an Anime</div>
+						</div>
+			</div>
+			</td>
+			<td class="p-3">
+				Anime
+			</td>
+			<td class="p-3 font-bold">
+				/animesearch
+			</td>
+			<td class="p-3">
+				<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+			</td>
+			<td class="p-3">
+
+			</td>
+			</td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+	</div>
+	<!-- MODERATION COMMANDS-->
+	<link
+		href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+		rel="stylesheet">
+	<div class="flex items-center justify-center pt-8 ">
+		<div class="col-span-12">
+			<h2 id="moderation" class="font-semibold text-white  border-b-2">Moderation Commands</h2>
+			<div class="overflow-auto lg:overflow-visible ">
+				<table class="table text-gray-400 border-separate space-y-6 text-sm">
+					<thead class="bg-gray-800 text-gray-500">
+						<tr>
+							<th class="p-3">Command</th>
+							<th class="p-3 text-left">Category</th>
+							<th class="p-3 text-left">Usage</th>
+							<th class="p-3 text-left">Status</th>
+							<th class="p-3">
+
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="bg-gray-800">
+							<td class="p-3">
+								<div class="ml-3">
+									<div class="">Kick</div>
+									<div class="text-gray-500"></div>
+								</div>
+			</div>
+			</td>
+			<td class="p-3">
+				Moderation
+			</td>
+			<td class="p-3 font-bold">
+				/kick
+			</td>
+			<td class="p-3">
+				<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+			</td>
+			<td class="p-3">
+
+			</td>
+			</tr>
+			<tr class="bg-gray-800">
+				<td class="p-3">
+					<div class="ml-3">
+						<div class="">Ban</div>
+						<div class="text-gray-500"></div>
+					</div>
+		</div>
+		</td>
+		<td class="p-3">
+			Moderation
+		</td>
+		<td class="p-3 font-bold">
+			/ban
+		</td>
+		<td class="p-3">
+			<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+		</td>
+		<td class="p-3">
+
+		</td>
+		</tr>
+		<tr class="bg-gray-800">
+			<td class="p-3">
+				<div class="ml-3">
+					<div class="">Unban</div>
+					<div class="text-gray-500"></div>
+				</div>
+	</div>
+	</td>
+	<td class="p-3">
+		Moderation
+	</td>
+	<td class="p-3 font-bold">
+		/unban
+	</td>
+	<td class="p-3">
+		<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+	</td>
+	<td class="p-3">
+
+	</td>
+	</tr>
+	<tr class="bg-gray-800">
+		<td class="p-3">
+			<div class="ml-3">
+				<div class="">Log Setup</div>
+				<div class="text-gray-500"></div>
+			</div>
+			</div>
+		</td>
+		<td class="p-3">
+			Moderation
+		</td>
+		<td class="p-3 font-bold">
+			/logsetup
+		</td>
+		<td class="p-3">
+			<span class="bg-red-400 text-gray-100 rounded-md px-2">Offline</span>
+		</td>
+		<td class="p-3">
+
+		</td>
+	</tr>
+	<tr class="bg-gray-800">
+		<td class="p-3">
+			<div class="ml-3">
+				<div class="">Clear</div>
+				<div class="text-gray-500"> Purge | Delete</div>
+			</div>
+			</div>
+		</td>
+		<td class="p-3">
+			Moderation
+		</td>
+		<td class="p-3 font-bold">
+			/clear
+		</td>
+		<td class="p-3">
+			<span class="bg-red-400 text-gray-100 rounded-md px-2">Offline</span>
+		</td>
+		<td class="p-3">
+
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	</div>
+	</div>
+	</div>
+
+	<!--Fun Commands-->
+	<link
+		href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+		rel="stylesheet">
+	<div class="flex items-center justify-center pt-8 ">
+		<div class="col-span-12">
+			<h2 id="fun" class="font-semibold text-white  border-b-2">Fun Commands</h2>
+			<div class="overflow-auto lg:overflow-visible ">
+				<table class="table text-gray-400 border-separate space-y-6 text-sm">
+					<thead class="bg-gray-800 text-gray-500">
+						<tr>
+							<th class="p-3">Command</th>
+							<th class="p-3 text-left">Category</th>
+							<th class="p-3 text-left">Usage</th>
+							<th class="p-3 text-left">Status</th>
+							<th class="p-3">
+
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="bg-gray-800">
+							<td class="p-3">
+								<div class="ml-3">
+									<div class="">Kick</div>
+									<div class="text-gray-500"></div>
+								</div>
+			</div>
+			</td>
+			<td class="p-3">
+				Moderation
+			</td>
+			<td class="p-3 font-bold">
+				[prefix]kick
+			</td>
+			<td class="p-3">
+				<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+			</td>
+			<td class="p-3">
+
+			</td>
+			</tr>
+			<tr class="bg-gray-800">
+				<td class="p-3">
+					<div class="ml-3">
+						<div class="">Ban</div>
+						<div class="text-gray-500"></div>
+					</div>
+		</div>
+		</td>
+		<td class="p-3">
+			Moderation
+		</td>
+		<td class="p-3 font-bold">
+			[prefix]ban
+		</td>
+		<td class="p-3">
+			<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+		</td>
+		<td class="p-3">
+
+		</td>
+		</tr>
+		<tr class="bg-gray-800">
+			<td class="p-3">
+				<div class="ml-3">
+					<div class="">Unban</div>
+					<div class="text-gray-500"></div>
+				</div>
+	</div>
+	</td>
+	<td class="p-3">
+		Moderation
+	</td>
+	<td class="p-3 font-bold">
+		[prefix]unban
+	</td>
+	<td class="p-3">
+		<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+	</td>
+	<td class="p-3">
+
+	</td>
+	</tr>
+	<tr class="bg-gray-800">
+		<td class="p-3">
+			<div class="ml-3">
+				<div class="">Log Setup</div>
+				<div class="text-gray-500"></div>
+			</div>
+			</div>
+		</td>
+		<td class="p-3">
+			Moderation
+		</td>
+		<td class="p-3 font-bold">
+			[prefix]logsetup
+		</td>
+		<td class="p-3">
+			<span class="bg-red-400 text-gray-100 rounded-md px-2">Offline</span>
+		</td>
+		<td class="p-3">
+
+		</td>
+	</tr>
+	<tr class="bg-gray-800">
+		<td class="p-3">
+			<div class="ml-3">
+				<div class="">Clear</div>
+				<div class="text-gray-500"> Purge | Delete</div>
+			</div>
+			</div>
+		</td>
+		<td class="p-3">
+			Moderation
+		</td>
+		<td class="p-3 font-bold">
+			[prefix]clear [amount]
+		</td>
+		<td class="p-3">
+			<span class="bg-red-400 text-gray-100 rounded-md px-2">Offline</span>
+		</td>
+		<td class="p-3">
+
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	</div>
+	</div>
+	</div>
+	<!--Images Commands-->
+	<link
+				href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+				rel="stylesheet">
+			<div class="flex items-center justify-center pt-8 ">
+				<div class="col-span-12">
+					<h2 id="images" class="font-semibold text-white  border-b-2">Images Commands</h2>
+					<div class="overflow-auto lg:overflow-visible ">
+						<table class="table text-gray-400 border-separate space-y-6 text-sm">
+							<thead class="bg-gray-800 text-gray-500">
+								<tr>
+									<th class="p-3">Command</th>
+									<th class="p-3 text-left">Category</th>
+									<th class="p-3 text-left">Usage</th>
+									<th class="p-3 text-left">Status</th>
+									<th class="p-3">
+
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="bg-gray-800">
+									<td class="p-3">
+										<div class="ml-3">
+											<div class="">Anime Gifs</div>
+											<div class="text-gray-500">Get Anime GIFs</div>
+										</div>
+					</div>
+					</td>
+					<td class="p-3">
+						Anime
+					</td>
+					<td class="p-3 font-bold">
+						/anime
+					</td>
+					<td class="p-3">
+						<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+					</td>
+					<td class="p-3">
+
+					</td>
+					</tr>
+					<tr class="bg-gray-800">
+						<td class="p-3">
+							<div class="ml-3">
+								<div class="">Anime Quotes</div>
+								<div class="text-gray-500">Get Anime Quotes</div>
+							</div>
+				</div>
+				</td>
+				<td class="p-3">
+					Anime
+				</td>
+				<td class="p-3 font-bold">
+					/quote
+				</td>
+				<td class="p-3">
+					<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+				</td>
+				<td class="p-3">
+
+				</td>
+				</tr>
+				<tr class="bg-gray-800">
+					<td class="p-3">
+						<div class="ml-3">
+							<div class="">Anime Search</div>
+							<div class="text-gray-500">Search information about an Anime</div>
+						</div>
+			</div>
+			</td>
+			<td class="p-3">
+				Anime
+			</td>
+			<td class="p-3 font-bold">
+				/animesearch
+			</td>
+			<td class="p-3">
+				<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+			</td>
+			<td class="p-3">
+
+			</td>
+			</td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+	</div>
+	<!--Utility Commands-->
+	<link
+				href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+				rel="stylesheet">
+			<div class="flex items-center justify-center pt-8 ">
+				<div class="col-span-12">
+					<h2 id="utility" class="font-semibold text-white  border-b-2">Utility Commands</h2>
+					<div class="overflow-auto lg:overflow-visible ">
+						<table class="table text-gray-400 border-separate space-y-6 text-sm">
+							<thead class="bg-gray-800 text-gray-500">
+								<tr>
+									<th class="p-3">Command</th>
+									<th class="p-3 text-left">Category</th>
+									<th class="p-3 text-left">Usage</th>
+									<th class="p-3 text-left">Status</th>
+									<th class="p-3">
+
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="bg-gray-800">
+									<td class="p-3">
+										<div class="ml-3">
+											<div class="">Anime Gifs</div>
+											<div class="text-gray-500">Get Anime GIFs</div>
+										</div>
+					</div>
+					</td>
+					<td class="p-3">
+						Anime
+					</td>
+					<td class="p-3 font-bold">
+						/anime
+					</td>
+					<td class="p-3">
+						<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+					</td>
+					<td class="p-3">
+
+					</td>
+					</tr>
+					<tr class="bg-gray-800">
+						<td class="p-3">
+							<div class="ml-3">
+								<div class="">Anime Quotes</div>
+								<div class="text-gray-500">Get Anime Quotes</div>
+							</div>
+				</div>
+				</td>
+				<td class="p-3">
+					Anime
+				</td>
+				<td class="p-3 font-bold">
+					/quote
+				</td>
+				<td class="p-3">
+					<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+				</td>
+				<td class="p-3">
+
+				</td>
+				</tr>
+				<tr class="bg-gray-800">
+					<td class="p-3">
+						<div class="ml-3">
+							<div class="">Anime Search</div>
+							<div class="text-gray-500">Search information about an Anime</div>
+						</div>
+			</div>
+			</td>
+			<td class="p-3">
+				Anime
+			</td>
+			<td class="p-3 font-bold">
+				/animesearch
+			</td>
+			<td class="p-3">
+				<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+			</td>
+			<td class="p-3">
+
+			</td>
+			</td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+	</div>
+	<!--Games Commands-->
+	<link
+				href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+				rel="stylesheet">
+			<div class="flex items-center justify-center pt-8 ">
+				<div class="col-span-12">
+					<h2 id="games" class="font-semibold text-white  border-b-2">Games Commands</h2>
+					<div class="overflow-auto lg:overflow-visible ">
+						<table class="table text-gray-400 border-separate space-y-6 text-sm">
+							<thead class="bg-gray-800 text-gray-500">
+								<tr>
+									<th class="p-3">Command</th>
+									<th class="p-3 text-left">Category</th>
+									<th class="p-3 text-left">Usage</th>
+									<th class="p-3 text-left">Status</th>
+									<th class="p-3">
+
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="bg-gray-800">
+									<td class="p-3">
+										<div class="ml-3">
+											<div class="">Anime Gifs</div>
+											<div class="text-gray-500">Get Anime GIFs</div>
+										</div>
+					</div>
+					</td>
+					<td class="p-3">
+						Anime
+					</td>
+					<td class="p-3 font-bold">
+						/anime
+					</td>
+					<td class="p-3">
+						<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+					</td>
+					<td class="p-3">
+
+					</td>
+					</tr>
+					<tr class="bg-gray-800">
+						<td class="p-3">
+							<div class="ml-3">
+								<div class="">Anime Quotes</div>
+								<div class="text-gray-500">Get Anime Quotes</div>
+							</div>
+				</div>
+				</td>
+				<td class="p-3">
+					Anime
+				</td>
+				<td class="p-3 font-bold">
+					/quote
+				</td>
+				<td class="p-3">
+					<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+				</td>
+				<td class="p-3">
+
+				</td>
+				</tr>
+				<tr class="bg-gray-800">
+					<td class="p-3">
+						<div class="ml-3">
+							<div class="">Anime Search</div>
+							<div class="text-gray-500">Search information about an Anime</div>
+						</div>
+			</div>
+			</td>
+			<td class="p-3">
+				Anime
+			</td>
+			<td class="p-3 font-bold">
+				/animesearch
+			</td>
+			<td class="p-3">
+				<span class="bg-green-400 text-gray-100 rounded-md px-2">available</span>
+			</td>
+			<td class="p-3">
+
+			</td>
+			</td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+
+</main>
+
+<footer class="relative bg-gray-900 pt-8 pb-6">
+	<div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+		style="height: 80px;">
+
+	</div>
+	<div class="container mx-auto px-4">
+		<div class="flex flex-wrap">
+			<div class="w-full lg:w-6/12 px-4">
+				<h4 class="text-3xl font-semibold text-white">Let's keep in touch!</h4>
+				<h5 class="text-lg mt-0 mb-2 text-gray-700">
+					Contact US
+				</h5>
+				<div class="mt-6">
+					<button
+						class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3">
+						<a href="https://github.com/GizmolabAI/DiscordBot-Flash" target="_blank"> </a>
+						<i class="flex fab fa-github"></i>
+					</button>
+				</div>
+			</div>
+			<div class="w-full lg:w-6/12 px-4">
+				<div class="flex flex-wrap items-top mb-6">
+					<div class="w-full lg:w-4/12 px-4 ml-auto">
+						<span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+						<ul class="list-unstyled">
+							<li>
+								<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+									href="/">Home</a>
+							</li>
+							<li>
+								<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+									href="/dashboard">Dashboard</a>
+							</li>
+							<li>
+								<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+									href="https://github.com/GizmolabAI/DiscordBot-Flash" target="_blank">Github</a>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<hr class="my-6 border-gray-400" />
+		<div class="flex flex-wrap items-center md:justify-between justify-center">
+			<div class="w-full md:w-4/12 px-4 mx-auto text-center">
+				<div class="text-sm text-gray-600 font-semibold py-1 ">
+					<a style="font-size: 20px" class="text-gray-600 hover:text-white">
+						<p> Copyright © 2021 FLASH BOT</p>
+						<!--- DONT REMOVE OR EDIT THIS COPYRIGHT(THIS TEMPLATE IS ONLY FOR PERSONAL USE WITH COPYRIGHT. LEGAL ACTION MIGHT BE TAKEN IF REMOVED)--->
+					</a>
+
+
+				</div>
+
+
+
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+<script>
+	function toggleNavbar(collapseID) {
+		document.getElementById(collapseID).classList.toggle("hidden");
+		document.getElementById(collapseID).classList.toggle("block");
+	}
+</script>
+
+</html>

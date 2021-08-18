@@ -3,7 +3,7 @@
     <div style="display: flex; flex-wrap: wrap; justify-content: center;">
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/style.css">
-        <div class="flex items-center bg-indigo-100 w-screen min-h-screen" style="font-family: 'Muli', sans-serif;">
+        <div class="flex items-center bg-gray-900 w-screen min-h-screen" style="font-family: 'Muli', sans-serif;">
             <div class="container ml-auto mr-auto flex flex-wrap items-start">
                 <div class="w-full pl-5 lg:pl-2 mb-4 mt-4">
 
@@ -26,7 +26,7 @@
                             </figure>
                             <div class="rounded-lg p-4 bg-black flex flex-col">
                                 <div>
-                                    <h5 style="font-size:18px;" class="text-white text-2xl font-bold leading-none">
+                                    <h5 style="font-size:18px;" class="text-white text-center text-2xl font-bold leading-none">
                                         <%= guild.name %>
                                     </h5>
                                     <span class="text-xs text-gray-400 leading-none"></span>
@@ -43,12 +43,12 @@
                                             style="background: #D72323; margin-top: 10px;margin-left: 60%;"
                                             class="k font-bold py-2 px-4 rounded-full">
 
-                                            <span class="b"> EDIT</span>
+                                            <span class="b">EDIT</span>
                                             </button></a>
                                         <% } else { %>
                                             <a href="<%= `https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&guild_id=${guild.id}&permissions=55801015543&response_type=code&redirect_uri=${encodeURIComponent(`${bot.config.domain}/callback`)}&scope=bot%20applications.commands`  %>"
                                                 <button style="background: #D72323; margin-top: 10px;margin-left: 60%;"
-                                                class="k font-bold py-2 px-4 rounded-full">
+                                                class="k font-bold py-2 px-4 rounded-full ">
                                                 <span class="b">INVITE</span>
                                                 </button>
                                             </a>

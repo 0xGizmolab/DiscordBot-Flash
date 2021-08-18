@@ -27,6 +27,7 @@
 	<script src="/js/charts-pie.js" defer></script>
 	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+	<script async src="https://arc.io/widget.min.js#RZDNGKSh"></script>
 </head>
 
 <body>
@@ -80,7 +81,7 @@
 								<a href="/login"> <button id="userButton"
 										class="flex items-center focus:outline-none mr-3">
 										<button
-											class="h-10 px-5 text-black transition-colors duration-150 bg-yellow-400 rounded-full focus:shadow-outline hover:bg-white">Login</button>
+											class="h-10 px-5 text-black transition-colors duration-150 bg-red-700 rounded-full focus:shadow-outline hover:bg-white">Login</button>
 
 									</button>
 
@@ -110,35 +111,77 @@
 					<% if (active=='home' ) { %>
 						<li class="mr-6 my-2 md:my-0">
 							<a href="/"
-								class="block py-1 md:py-3 pl-1 align-middle text-yellow-400 no-underline hover:text-yellow-100 border-b-2 border-yellow-400 hover:border-yellow-400">
-								<i class="fas fa-home fa-fw mr-3 text-yellow-400"></i><span
+								class="block py-1 md:py-3 pl-1 align-middle text-red-700 no-underline hover:text-red-600 border-b-2 border-red-700 hover:border-red-700">
+								<i class="fas fa-home fa-fw mr-3 text-red-700"></i><span
 									class="pb-1 md:pb-0 text-sm">Home</span>
 							</a>
 						</li>
 						<li class="mr-6 my-2 md:my-0">
-							<a href="/dashboard"
-								class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-yellow-400">
+							<a href="/features"
+								class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-red-700">
 								<i class="fas fa-tasks fa-fw mr-3"></i><span
+									class="pb-1 md:pb-0 text-sm">Features</span>
+							</a>
+						</li>
+						<li class="mr-6 my-2 md:my-0">
+							<a href="/dashboard"
+								class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-red-700">
+								<i class="fas fa-sliders-h fa-fw mr-3"></i><span
 									class="pb-1 md:pb-0 text-sm">DashBoard</span>
 							</a>
 						</li>
-						<% } else { %>
+					
+						<% } else if(active=='dash') { %>
 							<li class="mr-6 my-2 md:my-0">
 								<a href="/"
-									class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-yellow-400">
-									<i class="fas fa-tasks fa-fw mr-3"></i><span
+									class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-red-700">
+									<i class="fas fa-home fa-fw mr-3"></i><span
 										class="pb-1 md:pb-0 text-sm">Home</span>
 								</a>
 							</li>
 							<li class="mr-6 my-2 md:my-0">
+								<a href="/features"
+									class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-red-700">
+									<i class="fas fa-tasks fa-fw mr-3"></i><span
+										class="pb-1 md:pb-0 text-sm">Features</span>
+								</a>
+							</li>
+							<li class="mr-6 my-2 md:my-0">
 								<a href="/dashboard"
-									class="block py-1 md:py-3 pl-1 align-middle text-yellow-400 no-underline hover:text-yellow-100 border-b-2 border-yellow-400 hover:border-yellow-400">
-									<i class="fas fa-home fa-fw mr-3 text-yellow-400"></i><span
+									class="block py-1 md:py-3 pl-1 align-middle text-red-700 no-underline hover:text-red-600 border-b-2 border-red-700 hover:border-red-700">
+									<i class="fas fa-sliders-h fa-fw mr-3 text-red-700"></i><span
 										class="pb-1 md:pb-0 text-sm">DashBoard</span>
 								</a>
 							</li>
+						
 
-							<% } %>
+							<% } else if (active=='features') {%>
+								<li class="mr-6 my-2 md:my-0">
+									<a href="/"
+										class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-red-700">
+										<i class="fas fa-home fa-fw mr-3"></i><span
+											class="pb-1 md:pb-0 text-sm">Home</span>
+									</a>
+								</li>
+								<li class="mr-6 my-2 md:my-0">
+									<a href="/features"
+										class="block py-1 md:py-3 pl-1 align-middle text-red-700 no-underline hover:text-red-600 border-b-2 border-red-700 hover:border-red-700">
+										<i class="fas fa-tasks fa-fw mr-3 text-red-700"></i><span
+											class="pb-1 md:pb-0 text-sm">Features</span>
+									</a>
+								</li>
+								<li class="mr-6 my-2 md:my-0">
+									<a href="/dashboard"
+										class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-red-700">
+										<i class="fas fa-sliders-h fa-fw mr-3"></i><span
+											class="pb-1 md:pb-0 text-sm">DashBoard</span>
+									</a>
+								</li>
+							
+								
+
+
+								<% } %>
 
 
 

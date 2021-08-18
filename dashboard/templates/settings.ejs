@@ -3,7 +3,7 @@
   <div class="flex flex-row h-full">
 
 
-    <nav class="navbar1 bg-black w-20  justify-between flex flex-col ">
+    <nav class="navbar1 bg-black w-20 justify-between flex flex-col ">
       <div class="mt-10 mb-10">
 
 
@@ -16,7 +16,7 @@
               <li class="mb-6">
                 <a href="#">
                   <span>
-                    <i style="color: yellow!important; margin-left: 27%;" class="fas fa-chart-line fa-fw mr-3"></i>
+                    <i style="color: red!important; margin-left: 27%;" class="fas fa-chart-line fa-fw mr-3"></i>
                   </span>
                 </a>
               </li>
@@ -47,10 +47,10 @@
         </a>
       </div>
     </nav>
-    <div class="px-16 py-4 text-gray-700 bg-white h-screen w-screen">
+    <div class="px-16 py-4 text-gray-700 bg-gray-900 h-screen w-screen">
       <main>
         <div class="container px-6 mx-auto grid">
-          <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+          <h2 class="my-6 text-2xl font-semibold text-white dark:text-gray-200">
             <%- guild.name %>
           </h2>
           <!-- Cards -->
@@ -98,49 +98,7 @@
 
           </div>
         </div>
-        <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-          Charts
-        </h2>
-        <div class="grid gap-6 mb-8 md:grid-cols-2">
-          <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
-            <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-              Chart 1
-            </h4>
-            <canvas id="pie"></canvas>
-            <div class="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400">
-              <!-- Chart legend -->
-              <div class="flex items-center">
-                <span class="inline-block w-3 h-3 mr-1 bg-blue-500 rounded-full"></span>
-                <span>1</span>
-              </div>
-              <div class="flex items-center">
-                <span class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"></span>
-                <span>2</span>
-              </div>
-              <div class="flex items-center">
-                <span class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
-                <span>3</span>
-              </div>
-            </div>
-          </div>
-          <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
-            <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-              Chart 2
-            </h4>
-            <canvas id="line"></canvas>
-            <div class="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400">
-              <!-- Chart legend -->
-              <div class="flex items-center">
-                <span class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"></span>
-                <span>1</span>
-              </div>
-              <div class="flex items-center">
-                <span class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
-                <span>2</span>
-              </div>
-            </div>
-          </div>
-        </div>
+       
     </div>
   </div>
   </main>

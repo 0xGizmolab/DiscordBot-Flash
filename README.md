@@ -19,7 +19,7 @@
     <a href="https://docs.gizmolab.xyz"><strong>Explore The Docs »</strong></a>
     <br />
     <br />
-     <a href="https://github.com/GizmolabAI/DiscordBot-Flash/issues">View Demo</a>
+     <a href="https://flash.gizmolab.xyz/">View Demo</a>
     ·
     <a href="https://github.com/GizmolabAI/DiscordBot-Flash/issues">Report Bug</a>
     ·

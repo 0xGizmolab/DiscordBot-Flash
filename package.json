@@ -28,6 +28,7 @@
     "glob": "^7.1.7",
     "mal-scraper": "^2.11.3",
     "memer-api": "^3.0.6",
+    "memer-api-premium": "^1.0.2",
     "memorystore": "^1.6.2",
     "mongoose": "^5.12.3",
     "ms": "^2.1.3",

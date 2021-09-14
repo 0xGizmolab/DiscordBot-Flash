@@ -1,5 +1,5 @@
 const { Client, CommandInteraction, MessageEmbed, MessageAttachment } = require("discord.js");
-const Meme = require("memer-api");
+const Meme = require("memer-api-premium");
 const config = require("../../config")
 const memer = new Meme(config.MEMER_API_TOKEN);
 module.exports = {
@@ -126,7 +126,7 @@ module.exports = {
                     description: "The Text you want to add in the image",
                     type: "STRING",
                     required: true
-                
+
                 },
             ],
         },
@@ -322,9 +322,9 @@ module.exports = {
         }
 
 
-// emergency meeting image-----------------------------------------------------------------------------------------
+        // emergency meeting image-----------------------------------------------------------------------------------------
         if (subcommand === `emergencymeeting`) {
-         
+
             const text = interaction.options.getString('text');
             let temp = new MessageEmbed()
                 .setColor("RANDOM")

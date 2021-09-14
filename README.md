@@ -195,6 +195,6 @@ Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 
 
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg
-[buymeacoffee]: https://www.buymeacoffee.com/gizmolab
+[buymeacoffee]: https://www.buymeacoffee.com/g1zmo
 
 
